@@ -51,7 +51,7 @@ class SplashActivity : AppCompatActivity(),AnimationListener {
     }
 
     fun toMainActivity(){
-        intent=Intent(this,MainActivity::class.java)
+        intent= Intent(this,MainActivity::class.java)
         startActivity(intent)
         finish()
     }

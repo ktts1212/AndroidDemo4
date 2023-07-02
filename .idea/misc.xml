@@ -1,7 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 =======
 >>>>>>> a22ff37 (secondcommit)
+=======
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+>>>>>>> da6eeb0dc431adf46027ab06504d19062d5bbfb7
+>>>>>>> 9dc3bd6350a0acb8bcd6f59ed76c5922d7f99639
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
