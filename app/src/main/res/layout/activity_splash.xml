@@ -6,11 +6,41 @@
     tools:context=".SplashActivity">
 
     <ImageView
-        android:layout_marginTop="162.5dp"
-        android:layout_marginLeft="56dp"
+        android:id="@+id/main_bg_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:src="@mipmap/main_bg" />
+
+    <ImageView
+        android:id="@+id/main_sl_back_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/splash_back" />
+
+    <ImageView
+        android:id="@+id/main_sl_front_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/splash_front" />
+
+    <ImageView
+        android:id="@+id/main_sl_title1"
         android:layout_width="wrap_content"
         android:layout_height="25.42dp"
-        android:src="@drawable/ic_splash_title1"
-        />
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="142.5dp"
+        android:layout_marginEnd="55.67dp"
+        android:src="@drawable/ic_splash_title1" />
+
+    <ImageView
+        android:id="@+id/main_sl_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="11.99dp"
+        android:layout_marginStart="58.5dp"
+        android:layout_marginTop="223.21dp"
+        android:layout_marginEnd="58.06dp"
+        android:src="@drawable/ic_splash_title2" />
 
 </RelativeLayout>
