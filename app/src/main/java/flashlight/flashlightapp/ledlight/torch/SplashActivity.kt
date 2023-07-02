@@ -1,5 +1,6 @@
 package flashlight.flashlightapp.ledlight.torch
 
+<<<<<<< HEAD
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -117,5 +118,14 @@ class SplashActivity : AppCompatActivity(),AnimationListener {
     }
 
     override fun onAnimationRepeat(p0: Animation?) {
+=======
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class SplashActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_splash)
+>>>>>>> da6eeb0dc431adf46027ab06504d19062d5bbfb7
     }
 }

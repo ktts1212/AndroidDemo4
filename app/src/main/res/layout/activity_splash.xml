@@ -6,6 +6,7 @@
     tools:context=".SplashActivity">
 
     <ImageView
+<<<<<<< HEAD
         android:id="@+id/main_bg_imageview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -42,5 +43,13 @@
         android:layout_marginTop="223.21dp"
         android:layout_marginEnd="58.06dp"
         android:src="@drawable/ic_splash_title2" />
+=======
+        android:layout_marginTop="162.5dp"
+        android:layout_marginLeft="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="25.42dp"
+        android:src="@drawable/ic_splash_title1"
+        />
+>>>>>>> da6eeb0dc431adf46027ab06504d19062d5bbfb7
 
 </RelativeLayout>
