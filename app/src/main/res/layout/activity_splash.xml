@@ -9,6 +9,7 @@
         android:id="@+id/main_bg_imageview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="centerCrop"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
         android:src="@mipmap/main_bg" />
@@ -17,6 +18,7 @@
         android:id="@+id/main_sl_back_iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="centerCrop"
         android:src="@mipmap/splash_back" />
 
     <ImageView
