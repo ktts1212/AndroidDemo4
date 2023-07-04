@@ -1,5 +1,6 @@
 package flashlight.flashlightapp.ledlight.torch
 
+import android.animation.ValueAnimator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -34,6 +35,7 @@ class SplashActivity : AppCompatActivity(),AnimationListener {
 
     private lateinit var setAnim2: AnimationSet
 
+    private lateinit var pganimaor:ValueAnimator
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
@@ -43,7 +45,9 @@ class SplashActivity : AppCompatActivity(),AnimationListener {
         binding.mainSlFrontIv.startAnimation(setAnim)
         binding.mainSlTitle1.startAnimation(setAnim1)
         binding.mainSlTitle2.startAnimation(setAnim2)
+        pganimaor.start()
         translateAnimation.setAnimationListener(this)
+
         Timer().schedule(6000){
             toMainActivity()
         }
@@ -83,6 +87,13 @@ class SplashActivity : AppCompatActivity(),AnimationListener {
         )
         translateAnimation2.duration=1000
         translateAnimation2.fillAfter=true
+        //设置progressbar动画
+        pganimaor=ValueAnimator.ofFloat(0f,100f)
+        pganimaor.duration=6000
+        pganimaor.addUpdateListener {animation->
+            val animatedValue=animation.animatedValue as Float
+            binding.slProgressbar.progress=animatedValue.toInt()
+        }
         //设置集合动画
         setAnim=AnimationSet(true)
         setAnim.addAnimation(alphaAnimation)

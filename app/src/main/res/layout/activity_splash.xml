@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,32 +10,47 @@
         android:id="@+id/main_bg_imageview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:src="@mipmap/main_bg" />
+        android:scaleType="centerCrop"
+        android:src="@mipmap/main_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/main_sl_back_iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@mipmap/splash_back" />
+        android:src="@mipmap/splash_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+
+    <!--    android:layout_height="25.42dp"-->
+    <!--    android:layout_marginStart="56dp"-->
+    <!--    android:layout_marginTop="142.5dp"-->
+    <!--    android:layout_marginEnd="55.67dp"-->
     <ImageView
         android:id="@+id/main_sl_front_iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/splash_front" />
+        android:scaleType="centerCrop"
+        android:src="@mipmap/splash_front"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
         android:id="@+id/main_sl_title1"
         android:layout_width="wrap_content"
         android:layout_height="25.42dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="142.5dp"
+        android:layout_marginTop="162.5dp"
         android:layout_marginEnd="55.67dp"
-        android:src="@drawable/ic_splash_title1" />
+        android:src="@drawable/ic_splash_title1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/main_sl_title2"
@@ -43,7 +59,23 @@
         android:layout_marginStart="58.5dp"
         android:layout_marginTop="223.21dp"
         android:layout_marginEnd="58.06dp"
-        android:src="@drawable/ic_splash_title2" />
+        android:src="@drawable/ic_splash_title2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ProgressBar
+        android:id="@+id/sl_progressbar"
+        android:layout_width="315dp"
+        android:layout_height="4.5dp"
+        android:layout_marginTop="754.5dp"
+        android:layout_marginBottom="50dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="10"
+        android:progressDrawable="@drawable/progressbar_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
